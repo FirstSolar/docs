@@ -17,13 +17,15 @@ root {
   color-scheme: light dark;
 }
 
+/* The style sheet includes detailed property comments
+to support stakeholders with varying CSS knowledge. */
 :root {
   --primary-color: #0088ff; /* Set the primary color. */
   --secondary-color: #0099ff; /* Set the secondary color. */
   --text-color: #373737; /* Set the color for the text. */
   --background-color: #eeeeee; /* Set the color for the background. */
   --border-color: #bbbbbb; /* Set the color for the borders. */
-  --font-family: Verdana, sans-serif;
+  --font-family: Verdana, sans-serif; /* Set the font family for the text of the element to "Verdana" and sans-serif. */
 }
 
 a {
@@ -41,7 +43,7 @@ a-comment {
   font-size: 11.25px; /* Set the font size for the text of the element. */
   font-family: var(
     --font-family
-  ); /* Set the font family of the element text to "Verdana" and sans-serif. */
+  ); /* Set the font family for the text of the element to "Verdana" and sans-serif. */
   font-weight: normal; /* Set the font weight of the text the element. */
   line-height: 1.5; /* Set the vertical spacing between lines of text. */
   margin: 0; /* Set the thickness for the margin area of the element. */
@@ -86,7 +88,7 @@ body {
   color: var(--text-color); /* Set the color for the text of the element. */
   font-family: var(
     --font-family
-  ); /* Set the font family to "Verdana" and sans-serif. */
+  ); /* Set the font family for the text of the element to "Verdana" and sans-serif. */
   max-width: 80vw; /* Set the maximum width of the element. */
   height: 100%; /* Set the height of the element. */
   padding-top: 0; /* Set the thickness for the top padding area of the element. */
@@ -307,7 +309,7 @@ dataType {
   -webkit-box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   color: #ffffff; /* Set the color for the text of the element. */
-  font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family of a data type label to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace. */
+  font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family for the text of the data type label to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace. */
   font-size: 14px; /* Set the font size of the element. */
   margin: 0 0 0 7px; /* Set the thickness for the margin area of the element. */
   padding-top: 3px; /* Set the thickness for the top padding area of the element. */
@@ -1142,7 +1144,7 @@ ol {
 
 #cards {
   text-align: center; /* Center the text of the cards container. */
-  font-family: "Sono", sans-serif; /* Set the font family of the cards container to "Sono" and sans-serif. */
+  font-family: "Sono", sans-serif; /* Set the font family for the text of the cards container to "Sono" and sans-serif. */
   font-size: 1.7vh; /* Set the font size of the text of the cards container. */
   height: 80vh; /* Set the height of the element. */
   width: 100%; /* Set the width of the element. */
@@ -1279,7 +1281,7 @@ ol {
   padding-left: 0; /* Set the thickness for the left padding area of the element. */
   background-color: #ffffff; /* Set the color for the background of the element. */
   color: #008cff; /* Set the color for the text of the element. */
-  font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif. */
+  font-family: "Sono", sans-serif; /* Set the font family for the text of the element to "Sono" and sans-serif. */
   font-size: 14px; /* Set the font size for the text of the element. */
   text-align: center; /* Align the text within the element. */
   z-index: -1; /* Set the stacking order of the card label. */
@@ -1496,7 +1498,12 @@ h1.title {
   opacity: 0; /* Set the opacity of the element. */
   font-size: 16px; /* Set the font size for the text of the element. */
   text-decoration: none; /* Specify the decoration applied to the text of the element, affecting its visual presentation. */
-  pointer-events: none; /* Control the element's response to pointer events. */
+  cursor: pointer;
+  /* Set the border radius for the corners of the element. */
+  -webkit-border-radius: 50%; /* For older versions of Chrome and Safari. */
+  -moz-border-radius: 50%; /* For older versions of Firefox. */
+  -o-border-radius: 50%; /* For older versions of Opera. */
+  border-radius: 50%; /* Standard property for border radius. */
   /* Set an effect of a transition for the element. */
   -webkit-transition: 0.25s; /* For older versions of Chrome and Safari. */
   -o-transition: 0.25s; /* For older versions of Opera. */
@@ -1513,11 +1520,6 @@ h1.title {
   -webkit-box-pack: center; /* For earlier versions of Chrome and Safari (pre-flexbox). */
   -ms-flex-pack: center; /* For Internet Explorer 10 (supports an earlier flexbox model). */
   justify-content: center; /* Standard syntax for modern browsers (widely supported). */
-  /* Set the border radius for the corners of the element. */
-  -webkit-border-radius: 50%; /* For older versions of Chrome and Safari. */
-  -moz-border-radius: 50%; /* For older versions of Firefox. */
-  -o-border-radius: 50%; /* For older versions of Opera. */
-  border-radius: 50%; /* Standard property for border radius. */
 }
 
 .to-top.active {
@@ -1548,7 +1550,7 @@ h1.title {
 /* identifiers. */
 
 #amp {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /* Set the font family for the text of the element. */
 }
 
 #mainResourceName,
