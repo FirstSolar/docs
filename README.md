@@ -143,7 +143,7 @@
 
 <a href="https://discord.gg/f6Vk2kDe" target="_blank"><img alt="Discord channel " title="Discord channel" src="assets/discord.svg" style="padding: 0; margin: 0;"/></a>
 
-- on the <a href="https://matrix.to/#/#docs:matrix.org" target="_blank">Documets Matrix channel</a>.
+- on the <a href="https://matrix.to/#/#docs:matrix.org" target="_blank">Documents Matrix channel</a>.
 
 - on <a href="https://stackoverflow.com/questions/tagged/real&mate-docs" target="_blank">Stack Overflow</a> by including the `realmate-documents` tag.
 
@@ -175,7 +175,7 @@ Every cup of coffee you buy not only fuels my passion but also allows me to dedi
 
 **Click the image to support my work:**
 
-<a href="https://coff.ee/cocacola">
+<a href="https://coff.ee/cocacola" rel="noopener noreferrer">
   <img src="assets/coffee.jpg" width="370" height="auto" alt="Buy Me a Coffee"/>
 </a>
 
