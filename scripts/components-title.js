@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /** Buttons. */
 
   /** Dark theme button. */
-  class themeButton extends HTMLElement {
+  class ThemeButton extends HTMLElement {
     connectedCallback() {
       this.insertAdjacentHTML(
         "beforeend",
@@ -41,10 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }
   }
-  customElements.define("theme-button", themeButton);
+  customElements.define("theme-button", ThemeButton);
 
   /** Editor mode button. */
-  class editorButton extends HTMLElement {
+  class EditorButton extends HTMLElement {
     connectedCallback() {
       this.insertAdjacentHTML(
         "beforeend",
@@ -61,10 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }
   }
-  customElements.define("editor-button", editorButton);
+  customElements.define("editor-button", EditorButton);
 
   /** Speak button. */
-  class speakButton extends HTMLElement {
+  class SpeakButton extends HTMLElement {
     connectedCallback() {
       this.insertAdjacentHTML(
         "beforeend",
@@ -80,10 +80,10 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }
   }
-  customElements.define("speak-button", speakButton);
+  customElements.define("speak-button", SpeakButton);
 
   /** Screenshot button. */
-  class screenshotButton extends HTMLElement {
+  class ScreenshotButton extends HTMLElement {
     connectedCallback() {
       this.insertAdjacentHTML(
         "beforeend",
@@ -99,10 +99,10 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }
   }
-  customElements.define("screenshot-button", screenshotButton);
+  customElements.define("screenshot-button", ScreenshotButton);
 
   /** HTML button. */
-  class htmlButton extends HTMLElement {
+  class HtmlButton extends HTMLElement {
     connectedCallback() {
       this.insertAdjacentHTML(
         "beforeend",
@@ -118,10 +118,10 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }
   }
-  customElements.define("html-button", htmlButton);
+  customElements.define("html-button", HtmlButton);
 
   /** Menu container. */
-  class menuContainer extends HTMLElement {
+  class MenuContainer extends HTMLElement {
     connectedCallback() {
       this.insertAdjacentHTML(
         "beforeend",
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }
   }
-  customElements.define("menu-container", menuContainer);
+  customElements.define("menu-container", MenuContainer);
 
   const menuContainerComponent = document.createElement("menu-container");
   if (!document.querySelector("#container>theme-button")) {
@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /** Logo. */
-  class logoImg extends HTMLElement {
+  class LogoImg extends HTMLElement {
     connectedCallback() {
       this.insertAdjacentHTML(
         "beforeend",
@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }
   }
-  customElements.define("logo-img", logoImg);
+  customElements.define("logo-img", LogoImg);
 
   console.log("components-title.js is completed");
 });
