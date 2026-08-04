@@ -23,6 +23,10 @@
 
 /** Loop through each codeblock and add "Copy" buttons to them. */
 const codeblocks = document.querySelectorAll("codeblock");
+/**
+ * The script includes detailed comments
+ * to support stakeholders with varying JS knowledge.
+ */
 codeblocks.forEach((codeblock) => {
   addCopyButtonToCodeblock(codeblock);
 });
@@ -31,7 +35,10 @@ function addCopyButtonToCodeblock(codeblock) {
   const button = document.createElement("button");
   button.textContent = "Copy";
   button.onclick = function () {
-    copy(codeblock, this); /** Pass the specific codeblock to the copy function. */
+    copy(
+      codeblock,
+      this
+    ); /** Pass the specific codeblock to the copy function. */
   };
   codeblock.appendChild(button); /** Append the button to the codeblock. */
 }
@@ -40,12 +47,16 @@ function copy(codeblock, button) {
   let inputElement = document.createElement("textarea");
   document.body.appendChild(inputElement);
 
-  let copyText = codeblock.textContent; /** Get the text content of the specific codeblock. */
+  let copyText =
+    codeblock.textContent; /** Get the text content of the specific codeblock. */
 
   /** Remove the text content of the button ("Copy") from the output if it exists. */
-  const buttonText = button.textContent; /** Get the text content of the button. */
+  const buttonText =
+    button.textContent; /** Get the text content of the button. */
   if (copyText.endsWith(buttonText)) {
-    copyText = copyText.slice(0, -buttonText.length).trim(); /** Remove the text content of the button. */
+    copyText = copyText
+      .slice(0, -buttonText.length)
+      .trim(); /** Remove the text content of the button. */
   }
 
   inputElement.value = copyText;
