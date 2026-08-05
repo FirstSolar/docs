@@ -20,6 +20,10 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
+  /**
+   * The script includes detailed comments
+   * to support stakeholders with varying JS knowledge.
+   */
   function downloadPageAsHTML() {
     const content = document.querySelector("body").innerHTML;
 
@@ -38,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const htmlBlob = new Blob(
           [
             `
-            <html>
+            <html lang="en" dir="ltr" itemscope itemtype="schema.org/WebPage">
                 <head>
                     <style>
                         ${cssContent} /* Insert the fetched CSS here */
